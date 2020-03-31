@@ -1,4 +1,4 @@
-package com.megazone.sample.config;
+package com.megazone.demo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

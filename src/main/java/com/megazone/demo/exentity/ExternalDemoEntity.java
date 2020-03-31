@@ -1,4 +1,4 @@
-package com.megazone.sample.exentity;
+package com.megazone.demo.exentity;
 
 
 import javax.persistence.*;

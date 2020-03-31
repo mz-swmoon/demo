@@ -1,12 +1,13 @@
-package com.megazone.sample.config;
+package com.megazone.demo.config;
 
-import com.megazone.sample.exrepository.ExternalDemoRepository;
-import com.megazone.sample.exentity.ExternalDemoEntity;
+import com.megazone.demo.exrepository.ExternalDemoRepository;
+import com.megazone.demo.exentity.ExternalDemoEntity;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.core.annotation.Order;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -21,7 +22,7 @@ import java.util.Random;
 import static org.slf4j.LoggerFactory.getLogger;
 
 @Configuration
-@EnableJpaRepositories(basePackages = "com.megazone.sample.exrepository", entityManagerFactoryRef = "exMysqlEntityManager", transactionManagerRef = "exMysqlTransactionManager")
+@EnableJpaRepositories(basePackages = "com.megazone.demo.exrepository", entityManagerFactoryRef = "exMysqlEntityManager", transactionManagerRef = "exMysqlTransactionManager")
 public class ExternalDataSourceConfig {
 
     private static final Logger logger = getLogger(ExternalDataSourceConfig.class);
@@ -40,7 +41,6 @@ public class ExternalDataSourceConfig {
     String ddlAuto = "create";
     String dialect = "org.hibernate.dialect.MySQL5Dialect";
 
-    @Bean
     public boolean loggerPrintConfig() {
         logger.info("[mysqlConfig]=====================================================================");
         logger.info("mysqlDriverClassName :: " + mysqlDriverClassName);
@@ -54,11 +54,11 @@ public class ExternalDataSourceConfig {
     }
 
     @Bean
-    @Primary
     public LocalContainerEntityManagerFactoryBean exMysqlEntityManager() {
+        loggerPrintConfig();
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(mysqlSource());
-        em.setPackagesToScan(new String[]{"com.megazone.sample.exentity"});
+        em.setPackagesToScan(new String[]{"com.megazone.demo.exentity"});
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
         HashMap<String, Object> properties = new HashMap<>();

@@ -1,4 +1,4 @@
-//package com.megazone.sample.inentity;
+//package com.megazone.demo.inentity;
 //
 //
 //import javax.persistence.*;

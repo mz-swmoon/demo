@@ -8,10 +8,16 @@ spring:
 server:
   port: 8080
 
+#datasource:
+#  driver-class-name: com.mysql.cj.jdbc.Driver
+#  jdbc-url: jdbc:mysql://13.125.101.68:3306/test
+#  username: test01
+#  password: 1234
+#  name: "External_"
+
 datasource:
   driver-class-name: com.mysql.cj.jdbc.Driver
   jdbc-url: jdbc:mysql://13.125.101.68:3306/test
   username: test01
   password: 1234
   name: "External_"
-

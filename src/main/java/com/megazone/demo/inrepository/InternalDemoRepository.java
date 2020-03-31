@@ -1,6 +1,6 @@
-//package com.megazone.sample.inrepository;
+//package com.megazone.demo.inrepository;
 //
-//import com.megazone.sample.inentity.InternalDemoEntity;
+//import com.megazone.demo.inentity.InternalDemoEntity;
 //import org.springframework.data.repository.CrudRepository;
 //import org.springframework.stereotype.Repository;
 //

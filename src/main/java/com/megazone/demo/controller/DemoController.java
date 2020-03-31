@@ -1,7 +1,7 @@
-package com.megazone.sample.controller;
+package com.megazone.demo.controller;
 
 import com.google.gson.Gson;
-import com.megazone.sample.exrepository.ExternalDemoRepository;
+import com.megazone.demo.exrepository.ExternalDemoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

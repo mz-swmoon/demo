@@ -33,39 +33,11 @@
                     </tr>
                     </thead>
                     <tbody id="mysqlResult"></tbody>
-                    <tbody id="ghost" style="visibility:hidden">
-                    <tr>
-                        <td>ID1</td>
-                        <td>Name</td>
-                        <td>Email</td>
-                        <td>Created on</td>
-                    </tr>
-                    <tr>
-                        <td>ID2</td>
-                        <td>Name</td>
-                        <td>Email</td>
-                        <td>Created on</td>
-                    </tr>
-                    <tr>
-                        <td>ID3</td>
-                        <td>Name</td>
-                        <td>Email</td>
-                        <td>Created on</td>
-                    </tr>
-                    <tr>
-                        <td>ID4</td>
-                        <td>Name</td>
-                        <td>Email</td>
-                        <td>Created on</td>
-                    </tr>
-                    <tr>
-                        <td>ID5</td>
-                        <td>Name</td>
-                        <td>Email</td>
-                        <td>Created on</td>
-                    </tr>
-                    </tbody>
+
                 </table>
+                <div id="ghost" >
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
             </div>
         </div>
 

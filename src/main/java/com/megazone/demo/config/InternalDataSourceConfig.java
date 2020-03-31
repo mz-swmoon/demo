@@ -1,7 +1,7 @@
-//package com.megazone.sample.config;
+//package com.megazone.demo.config;
 //
-//import com.megazone.sample.inentity.InternalDemoEntity;
-//import com.megazone.sample.inrepository.InternalDemoRepository;
+//import com.megazone.demo.inentity.InternalDemoEntity;
+//import com.megazone.demo.inrepository.InternalDemoRepository;
 //import org.slf4j.Logger;
 //import org.springframework.beans.factory.annotation.Value;
 //import org.springframework.context.annotation.Bean;
@@ -21,7 +21,7 @@
 //import static org.slf4j.LoggerFactory.getLogger;
 //
 //@Configuration
-//@EnableJpaRepositories(basePackages = "com.megazone.sample.inrepository", entityManagerFactoryRef = "inMysqlEntityManager", transactionManagerRef = "inMysqlTransactionManager")
+//@EnableJpaRepositories(basePackages = "com.megazone.demo.inrepository", entityManagerFactoryRef = "inMysqlEntityManager", transactionManagerRef = "inMysqlTransactionManager")
 //public class InternalDataSourceConfig {
 //
 //    private static final Logger logger = getLogger(InternalDataSourceConfig.class);
@@ -55,7 +55,7 @@
 //    public LocalContainerEntityManagerFactoryBean inMysqlEntityManager() {
 //        LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 //        em.setDataSource(mysqlSource());
-//        em.setPackagesToScan(new String[]{"com.megazone.sample.inentity"});
+//        em.setPackagesToScan(new String[]{"com.megazone.demo.inentity"});
 //        HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 //        em.setJpaVendorAdapter(vendorAdapter);
 //        HashMap<String, Object> properties = new HashMap<>();
